@@ -1,0 +1,26 @@
+<!doctype html><html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TradeView Lite - Analisa Crypto & Forex</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightweight-charts/4.1.3/lightweight-charts.standalone.production.min.js"></script>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#0d1117;color:#d6dbe3;font:14px system-ui,sans-serif}
+header{display:flex;flex-wrap:wrap;gap:10px;align-items:center;padding:10px 14px;background:#161b22;border-bottom:1px solid #2a313c}
+h1{font-size:18px;margin:0 10px 0 0;color:#f5c542}select,button{background:#21262d;color:#d6dbe3;border:1px solid #30363d;border-radius:6px;padding:7px 11px;cursor:pointer}
+button.on{background:#1f6feb;border-color:#1f6feb;color:#fff}.grp{display:flex;gap:4px;flex-wrap:wrap}
+.wrap{display:grid;grid-template-columns:1fr 340px;gap:12px;padding:12px}@media(max-width:900px){.wrap{grid-template-columns:1fr}}
+.box{background:#161b22;border:1px solid #2a313c;border-radius:8px;padding:10px}.lbl{font-size:12px;color:#8b949e;margin:6px 0 2px}
+#price{font-size:26px;font-weight:700}.badge{display:inline-block;padding:6px 16px;border-radius:6px;font-weight:800;font-size:20px}
+.BUY{background:#1a7f37}.SELL{background:#cf222e}.NETRAL{background:#6e7681}
+table{width:100%;border-collapse:collapse;margin:8px 0}td{padding:5px 0;border-bottom:1px solid #2a313c}td:last-child{text-align:right;font-weight:600}
+.up{color:#3fb950}.dn{color:#f85149}ul{padding-left:16px;margin:6px 0}li{margin:3px 0}.mtf{display:flex;gap:6px;flex-wrap:wrap}.mtf span{padding:4px 8px;border-radius:5px;font-size:12px}
+footer{padding:10px 14px;color:#8b949e;font-size:12px}
+</style></head><body>
+<header><h1>📈 TradeView Lite</h1>
+<select id="sym"></select>
+<div class="grp" id="tfs"></div>
+<div class="grp" id="tools"></div><span id="st" style="color:#8b949e"></span></header>
+<div class="wrap"><div>
+  <div class="box"><div id="main" style="height:420px"></div><div class="lbl">RSI (14)</div><div id="rsi" style="height:110px"></div><div class="lbl">MACD (12,26,9)</div><div id="macd" style="height:130px"></div></div>
+</div>
+<div class="box" id="panel">Memuat analisa...</div></div>
+<footer>Data: Binance & Yahoo Finance (publik, bisa tertunda). Analisa otomatis berbasis indikator hanya untuk edukasi, bukan saran finansial. Trading berisiko tinggi; gunakan risk management.</footer>
+<script src="/ta.js"></script><script src="/app.js"></script></body></html>
