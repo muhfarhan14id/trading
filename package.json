@@ -1,0 +1,1 @@
+{ "name": "trading-web", "private": true, "version": "1.0.0", "scripts": { "build": "echo 'No build required'" }, "engines": { "node": ">=18" } }
